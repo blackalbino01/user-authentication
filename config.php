@@ -1,14 +1,16 @@
 <?php
-	define('db_host','localhost:3306');
+	define('db_host','127.0.0.1');
 	define('db_user','root');
 	define('db_password','');
-	define('db_database','user_auth');
+	define('db_database','crud');
 
-	$conn = new mysqli(db_host, db_user, db_password, db_database);
-	if(!$conn){
-		die('could not connect: '.mysqli_error());
-	}
-	mysqli_select_db($conn,db_database); 
+	$conn = mysqli_connect(db_host, db_user, db_password, db_database);
+	
+
+	if(mysqli_connect_errno()) {
+	    $msg = "Database connection failed: ";
+	    $msg .= mysqli_connect_error();
+	    $msg .= " : " . mysqli_connect_errno();
+	    exit($msg);
+	  }
 ?>
-
-

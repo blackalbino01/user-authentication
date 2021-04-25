@@ -1,5 +1,5 @@
 # user-authentication
 create a field in mysql database..
-with name as "user_auth"
+with name as "basic_crud"
 table name "users"
-fields ["ID","fullname","track","email","password"]
+fields ["ID","fullname","email","password"]

@@ -2,7 +2,7 @@
 	$email="";
 	$password="";
 	if($_SERVER["REQUEST_METHOD"]=="POST"){
-		require'config.php';
+		require_once'config.php';
 		$email=$_POST['email'];
 		$password=$_POST['password'];
 
@@ -60,7 +60,9 @@
 				<label for="exampleInputPassword1">Password<span style="color: red;">*</span></label>
 				<input type="password" class="form-control" id="exampleInputPassword1" name="password" required>
 			</div>
-			<button type="submit" class="btn btn-primary">SignIn</button>
+			<button type="submit" class="btn btn-primary">LogIn</button>
+			<p><a href="resetpassword.php">Reset your password?</a></p>
+
 		</form>
 	</div>
 </body>

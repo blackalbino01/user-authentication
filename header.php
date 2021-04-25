@@ -5,4 +5,6 @@ echo "<link rel=\"stylesheet\" href=\"bootstrap.min.css\">";
 //Bootstrap offline JS
 echo "<script src=\"jquery.min.js\"></script>";
 echo "<script src=\"bootstrap.min.js\"></script>";
+
+    
  ?>
